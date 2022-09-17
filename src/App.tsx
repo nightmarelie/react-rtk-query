@@ -6,6 +6,7 @@ import { HomePage } from "./pages/HomePage";
 function App() {
   return (
     <Routes>
+      <Navigation />
       <Route path="/" element={<HomePage />} />
       <Route path="/favorites" element={<FavoritesPage />} />
     </Routes>

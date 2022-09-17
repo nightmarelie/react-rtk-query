@@ -6,7 +6,7 @@ import {
 import { useDebounce } from "../hooks/debounce";
 import { RepoCard } from "../components/RepoCard";
 
-export function HomePage() {
+export const HomePage = () => {
   const [search, setSearch] = useState("");
   const [dropdown, setDropdown] = useState(false);
   const debounced = useDebounce(search);
@@ -67,4 +67,4 @@ export function HomePage() {
       </div>
     </div>
   );
-}
+};

@@ -1,7 +1,7 @@
 import React from "react";
 import { useAppSelector } from "../hooks/redux";
 
-export function FavouritesPage() {
+export const FavouritesPage = () => {
   const { favourites } = useAppSelector((state) => state.github);
 
   if (favourites.length === 0) return <p className="text-center">No items.</p>;
@@ -19,4 +19,4 @@ export function FavouritesPage() {
       </ul>
     </div>
   );
-}
+};
