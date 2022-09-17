@@ -1,5 +1,5 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 export function Navigation() {
   return (
@@ -7,9 +7,11 @@ export function Navigation() {
       <h3 className="font-bold">Github Search</h3>
 
       <span>
-        <Link to="/" className="mr-2">Home</Link>
+        <Link to="/" className="mr-2">
+          Home
+        </Link>
         <Link to="/favourites">Favourites</Link>
       </span>
     </nav>
-  )
+  );
 }
